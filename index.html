@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <link href="dist/output.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Calulator-App</title>
+</head>
+<body>
+  <main class="w-full min-h-screen flex items-center justify-center bg-blmain">
+    <div class="container lg:w-[37.5%] sm:w-2/3 w-[86%]">
+      <div class="flex justify-between items-center">
+        <h2 class="sm:pl-2 pl-1 tracking-wide text-white font-spartan font-bold text-3xl">calc</h2>
+        <div class="">
+          <div class="flex justify-end">
+            <h3 class="w-6 text-center font-spartan text-white font-bold text-[12px]">1</h3>
+            <h3 class="w-6 text-center font-spartan text-white font-bold text-[12px]">2</h3>
+            <h3 class="w-6 text-center font-spartan text-white font-bold text-[12px]">3</h3>
+          </div>
+          <div class="flex items-center pb-3">
+            <h3 class="pr-7 font-spartan text-white font-bold text-xs tracking-wider">THEME</h3>
+            <div class="h-fit w-[72px] py-[1px] flex justify-between border-[5px] border-bltoggle bg-bltoggle rounded-full keytog">
+              <input class="toggle bg-blred hover:cursor-pointer opacity-100 focus:outline-none" type="radio" name="toggle" id="one" />
+              <input class="toggle bg-blred hover:cursor-pointer focus:outline-none" type="radio" name="toggle" id="two" />
+              <input class="toggle bg-blred hover:cursor-pointer focus:outline-none" type="radio" name="toggle" id="three" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <input id="screen" value="0" readonly type="text" class="text-right focus:outline-none w-full bg-blscreen h-fit sm:px-[30px] px-[20px] py-[16px] border-blscreen sm:rounded-[10px] rounded-md text-white font-bold sm:text-[64px] text-[38px] font-spartan">
+        <div class="bg-bltoggle w-full sm:pb-[34px] sm:pt-[31px] sm:px-[31px] px-[22px] pb-[28px] pt-[24px] border-bltoggle h-fit mt-6 sm:rounded-[10px] rounded-md keytog">
+          <div class="grid sm:gap-x-[25px] sm:gap-y-[30px] gap-x-[15px] gap-y-[17.5px] grid-cols-4">
+            <button class="number keyBox boxWhite key" value="7">7</button>
+            <button class="number keyBox boxWhite key" value="8">8</button>
+            <button class="number keyBox boxWhite key" value="9">9</button>
+            <button class="operator relative keyBox boxBlue der py-[10px]" id="del">DEL
+              <div class="hoverKey"></div>
+            </button>
+            <button class="number keyBox boxWhite key" value="4">4</button>
+            <button class="number keyBox boxWhite key" value="5">5</button>
+            <button class="number keyBox boxWhite key" value="6">6</button>
+            <button class="operator keyBox boxWhite key" value="+">+</button>
+            <button class="number keyBox boxWhite key" value="1">1</button>
+            <button class="number keyBox boxWhite key" value="2">2</button>
+            <button class="number keyBox boxWhite key" value="3">3</button>
+            <button class="operator keyBox boxWhite key" value="-">-</button>
+            <button id="decimal" class="keyBox boxWhite key" value=".">.</button>
+            <button class="number keyBox boxWhite key" value="0">0</button>
+            <button class="operator keyBox boxWhite key" value="/">/</button>
+            <button class="operator keyBox boxWhite key" value="*">x</button>
+            <button id="reset" class="relative col-span-2 keyBox boxBlue der py-[8.5px]">RESET
+              <div class="hoverKey"></div>
+            </button>
+            <button id="equal" class="relative org col-span-2 keyBox boxRed sm:py-[8.5px] py-3 text-[26px]">=
+              <div class="hoverKey"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .toggle {
+        @apply h-4 w-4 appearance-none rounded-full opacity-0;
+    }
+    .keyBox{
+        @apply font-spartan sm:rounded-[10px] rounded-md shadow-bt active:shadow-none active:translate-y-2 font-bold focus:outline-none sm:text-[40px] sm:leading-10 text-3xl
+    }
+    .boxWhite{
+        @apply text-bltext bg-blkeyw shadow-blkeywsh 
+    }
+    .boxBlue{
+        @apply text-white bg-blkeyb shadow-blkeybsh 
+    }
+    .boxRed{
+        @apply text-white bg-blred shadow-bldarkred
+    }
+    .boxw_two{
+        @apply text-ortext bg-orkeyw shadow-orkeywsh
+    }
+    .boxr_two{
+        @apply text-white bg-orred shadow-ordarkred
+    }
+    .boxb_two{
+        @apply text-white bg-orkeyb shadow-orkeybsh
+    }
+    .boxw_three{
+        @apply text-prltext bg-prlkeyw shadow-prlkeywsh
+    }
+    .boxr_three{
+        @apply text-prltext2 bg-prlred shadow-prldarkred
+    }
+    .boxb_three{
+        @apply text-white bg-prlkeyb shadow-prlkeybsh
+    }
+    .hoverKey{
+        @apply absolute w-full h-full bg-white top-0 sm:rounded-[10px] rounded-md opacity-0 hover:opacity-30;
+    }
+    .key{
+       @apply sm:pt-3 sm:pb-[6px] pt-[16px] pb-[8px]
+    }
+    .der{
+       @apply sm:text-[28px] text-[20px]
+    }
+}
