@@ -159,8 +159,9 @@
     inputDecimal = (dot) => {
         if(currentNumber.includes('.')){
             return
+        }else{
+          currentNumber += dot
         }
-        currentNumber += dot
     }
 
     $("#decimal").click(function(){
